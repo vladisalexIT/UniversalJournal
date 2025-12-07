@@ -937,7 +937,7 @@ h6 {
 
 .review__comment {
     font-size: 12px;
-    line-height: 125%;
+    line-height: 1.25;
     color: var(--color-grey-span);
     column-gap: 10px;
 }
@@ -1139,15 +1139,64 @@ h6 {
     padding-block: 60px;
 }
 
+.featured-reads__inner {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
 .featured-reads__list {
     max-width: 848px;
     width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.featured-reads__item {
+    position: relative;
 }
 
 .featured-reads__card {
     width: 100%;
     column-gap: 25px;
     padding: 25px;
+    border-radius: 0%;
+}
+
+.featured-reads__item::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 50px);
+    height: 1px;
+    background: var(--color-grey);
+    opacity: .5;
+    left: 25px;
+    bottom: 0;
+}
+
+.card__label {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+}
+
+.hidden-checkbox {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+
+.bookmark {
+    width: 14px;
+    height: 18px;
+    fill: #bcbfc2;
+    transition: fill .3s;
+}
+
+.card__input:checked~.bookmark {
+    fill: var(--color-red-accent);
 }
 
 .featured-reads__top {
@@ -1157,4 +1206,40 @@ h6 {
 .article-title--medium {
     font-size: 20px;
     line-height: 1.25;
+}
+
+.aside-recommended {
+    background-color: var(--color-white);
+}
+
+.aside-recommended__title {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-grey-secondary);
+}
+
+.aside-recommended__card {
+    padding-block: 17px;
+}
+
+.aside-recommended__card-top {
+    column-gap: 10px;
+}
+
+.aside-recommended__card .aside-recommended__card-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--color-grey-primary);
+    margin-bottom: 5px;
+}
+
+.aside-recommended__card .published-time {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    color: var(--color-grey-span);
 }

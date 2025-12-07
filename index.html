@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <svg display="none">
+        <symbol id="bookmark" viewBox="0 0 16 17">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.8125 11.2762L15.7567 15.4843C16.0904 15.8403 16.0794 16.4079 15.7326 16.7502C15.5694 16.9114 15.3544 17 15.1278 17C14.8883 17 14.6649 16.9024 14.4988 16.7255L10.5246 12.4854C9.39609 13.299 8.07619 13.7275 6.69113 13.7275C3.0017 13.7275 0 10.6484 0 6.86374C0 3.07913 3.0017 0 6.69113 0C10.3806 0 13.3823 3.07913 13.3823 6.86374C13.3823 8.48359 12.8266 10.0396 11.8125 11.2762ZM11.6367 6.86374C11.6367 4.06632 9.4182 1.79054 6.69113 1.79054C3.96406 1.79054 1.74551 4.06632 1.74551 6.86374C1.74551 9.66117 3.96406 11.9369 6.69113 11.9369C9.4182 11.9369 11.6367 9.66117 11.6367 6.86374Z" />
+        </symbol>
+    </svg>
     <header class="header">
         <div class="container">
             <div class="header__top flex-space">
@@ -618,6 +624,12 @@
                     <ul class="featured-reads__list">
                         <li class="featured-reads__item">
                             <article class="featured-reads__card article-card article-card--wide">
+                                <label for="card__input-check" class="card__label">
+                                    <input type="checkbox" id="card__input-check" class="hidden-checkbox card__input">
+                                    <svg class="bookmark">
+                                        <use xlink:href="img/spriteStyle.svg#Bookmark">
+                                    </svg>
+                                </label>
                                 <div class="featured-reads__top flex-space">
                                     <img src="./images/featured-reads/article-1.jpg" alt="Silver sports car">
                                     <div class="article-card__content">
@@ -637,17 +649,298 @@
                                         <div class="review__comment flex-space">
                                             <time class="review__comment-date" datetime="2024-08-06">Aug 6</time>
                                             <span class="comment-number flex-space"><img
-                                                    src="./icons/review-comment.svg" alt="Full-Review-Comment">16</span>
-                                            <span class="likes-number flex-space"><img src="./icons/heart.svg"
-                                                    alt="Full-Review-Comment">832</span>
+                                                    src="./icons/review-comment-grey.svg"
+                                                    alt="Full-Review-Comment">342</span>
+                                            <span class="likes-number flex-space"><img
+                                                    src="./icons/review-heart-grey.svg"
+                                                    alt="Full-Review-Comment">830</span>
                                         </div>
                                     </div>
-
                                 </div>
-
+                            </article>
+                        </li>
+                        <li class="featured-reads__item">
+                            <article class="featured-reads__card article-card article-card--wide">
+                                <div class="featured-reads__top flex-space">
+                                    <img src="./images/featured-reads/article-2.jpg" alt="Silver sports car">
+                                    <div class="article-card__content">
+                                        <span class="article-card__subtitle subtitle subtitle--blue">
+                                            Food
+                                        </span>
+                                        <a href="/" class="article-card__link">
+                                            <h3 class="article-card__title article-title--medium">
+                                                Three Courses, 20 Euros: The Affordable Dining Renaissance in Paris
+                                            </h3>
+                                            <p class="article-card__text">
+                                                The Los Angeles area, for all of its culinary diversity, has not
+                                                historically been thought of as a haven for bread lovers. The area has a
+                                                reputation as a place where gluten fears to tread.
+                                            </p>
+                                        </a>
+                                        <div class="review__comment flex-space">
+                                            <time class="review__comment-date" datetime="2024-08-06">Aug 6</time>
+                                            <span class="comment-number flex-space"><img
+                                                    src="./icons/review-comment-grey.svg"
+                                                    alt="Full-Review-Comment">27</span>
+                                            <span class="likes-number flex-space"><img
+                                                    src="./icons/review-heart-grey.svg"
+                                                    alt="Full-Review-Comment">129</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="featured-reads__item">
+                            <article class="featured-reads__card article-card article-card--wide">
+                                <div class="featured-reads__top flex-space">
+                                    <img src="./images/featured-reads/article-3.jpg" alt="Silver sports car">
+                                    <div class="article-card__content">
+                                        <span class="article-card__subtitle subtitle subtitle--blue">
+                                            Science
+                                        </span>
+                                        <a href="/" class="article-card__link">
+                                            <h3 class="article-card__title article-title--medium">
+                                                Watch the High-Flying Physics of a Plant’s Exploding Fruits
+                                            </h3>
+                                            <p class="article-card__text">
+                                                Three undergradute physics majors and their professor worked out how the
+                                                hairyflower wild petunia shoots tiny seeds more than 20 feet through the
+                                                air
+                                            </p>
+                                        </a>
+                                        <div class="review__comment flex-space">
+                                            <time class="review__comment-date" datetime="2024-08-06">Aug 6</time>
+                                            <span class="comment-number flex-space"><img
+                                                    src="./icons/review-comment-grey.svg"
+                                                    alt="Full-Review-Comment">30</span>
+                                            <span class="likes-number flex-space"><img
+                                                    src="./icons/review-heart-grey.svg"
+                                                    alt="Full-Review-Comment">284</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="featured-reads__item">
+                            <article class="featured-reads__card article-card article-card--wide">
+                                <div class="featured-reads__top flex-space">
+                                    <img src="./images/featured-reads/article-4.jpg" alt="Silver sports car">
+                                    <div class="article-card__content">
+                                        <span class="article-card__subtitle subtitle subtitle--blue">
+                                            Health
+                                        </span>
+                                        <a href="/" class="article-card__link">
+                                            <h3 class="article-card__title article-title--medium">
+                                                Watch the High-Flying Physics of a Plant’s Exploding Fruits
+                                            </h3>
+                                            <p class="article-card__text">
+                                                Three undergradute physics majors and their professor worked out how the
+                                                hairyflower wild petunia shoots tiny seeds more than 20 feet through the
+                                                air
+                                            </p>
+                                        </a>
+                                        <div class="review__comment flex-space">
+                                            <time class="review__comment-date" datetime="2024-08-06">Aug 6</time>
+                                            <span class="comment-number flex-space"><img
+                                                    src="./icons/review-comment-grey.svg"
+                                                    alt="Full-Review-Comment">102</span>
+                                            <span class="likes-number flex-space"><img
+                                                    src="./icons/review-heart-grey.svg"
+                                                    alt="Full-Review-Comment">1,293</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="featured-reads__item">
+                            <article class="featured-reads__card article-card article-card--wide">
+                                <div class="featured-reads__top flex-space">
+                                    <img src="./images/featured-reads/article-5.jpg" alt="Silver sports car">
+                                    <div class="article-card__content">
+                                        <span class="article-card__subtitle subtitle subtitle--blue">
+                                            Science
+                                        </span>
+                                        <a href="/" class="article-card__link">
+                                            <h3 class="article-card__title article-title--medium">
+                                                How the Shape of Your Ears Affects What You Hear
+                                            </h3>
+                                            <p class="article-card__text">
+                                                We’re able to locate sound because our brains grasp the shape of our
+                                                ears. When that shape changes, we need time and practice to adapt. Ears
+                                                are a peculiarly individual piece of anatomy.
+                                            </p>
+                                        </a>
+                                        <div class="review__comment flex-space">
+                                            <time class="review__comment-date" datetime="2024-08-06">Aug 6</time>
+                                            <span class="comment-number flex-space"><img
+                                                    src="./icons/review-comment-grey.svg"
+                                                    alt="Full-Review-Comment">5</span>
+                                            <span class="likes-number flex-space"><img
+                                                    src="./icons/review-heart-grey.svg"
+                                                    alt="Full-Review-Comment">82</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="featured-reads__item">
+                            <article class="featured-reads__card article-card article-card--wide">
+                                <div class="featured-reads__top flex-space">
+                                    <img src="./images/featured-reads/article-6.jpg" alt="Silver sports car">
+                                    <div class="article-card__content">
+                                        <span class="article-card__subtitle subtitle subtitle--blue">
+                                            Art & Design
+                                        </span>
+                                        <a href="/" class="article-card__link">
+                                            <h3 class="article-card__title article-title--medium">
+                                                New Contemporary Institute Reverberates in Richmond’s Historic Landscape
+                                            </h3>
+                                            <p class="article-card__text">
+                                                The center, which will open in April, takes a bold look at race
+                                                and other social issues that still resonate in the region as well as the
+                                                nation. A new Institute for Contemporary Art is set to open.
+                                            </p>
+                                        </a>
+                                        <div class="review__comment flex-space">
+                                            <time class="review__comment-date" datetime="2024-08-06">Aug 6</time>
+                                            <span class="comment-number flex-space"><img
+                                                    src="./icons/review-comment-grey.svg"
+                                                    alt="Full-Review-Comment">101</span>
+                                            <span class="likes-number flex-space"><img
+                                                    src="./icons/review-heart-grey.svg"
+                                                    alt="Full-Review-Comment">432</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </article>
                         </li>
                     </ul>
+                    <aside class="featured-reads__aside col-popular aside-recommended"
+                        aria-labelledby="col-popular-title">
+                        <h2 class="col-popular__title aside-recommended__title">Recommended for you</h2>
+                        <ol class="col-popular__list">
+                            <li class="col-popular__item">
+                                <article class="aside-recommended__card article-card col-popular-card">
+                                    <div class="aside-recommended__card-top flex-space">
+                                        <img src="./images/featured-reads/aside-1.jpg" alt="">
+                                        <div class="article-card__content">
+                                            <a href="/" class="article-card__link">
+                                                <h3 class="aside-recommended__card-title">
+                                                    Office Meetings Leave the Office
+                                                </h3>
+                                                <span class="published-time">
+                                                    15 minuts ago
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="col-popular__item">
+                                <article class="aside-recommended__card article-card col-popular-card">
+                                    <div class="aside-recommended__card-top flex-space">
+                                        <img src="./images/featured-reads/aside-2.jpg" alt="">
+                                        <div class="article-card__content">
+                                            <a href="/" class="article-card__link">
+                                                <h3 class="aside-recommended__card-title">
+                                                    Office Meetings Leave the Office
+                                                </h3>
+                                                <span class="published-time">
+                                                    15 minuts ago
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="col-popular__item">
+                                <article class="aside-recommended__card article-card col-popular-card">
+                                    <div class="aside-recommended__card-top flex-space">
+                                        <img src="./images/featured-reads/aside-3.jpg" alt="">
+                                        <div class="article-card__content">
+                                            <a href="/" class="article-card__link">
+                                                <h3 class="aside-recommended__card-title">
+                                                    Office Meetings Leave the Office
+                                                </h3>
+                                                <span class="published-time">
+                                                    15 minuts ago
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="col-popular__item">
+                                <article class="aside-recommended__card article-card col-popular-card">
+                                    <div class="aside-recommended__card-top flex-space">
+                                        <img src="./images/featured-reads/aside-4.jpg" alt="">
+                                        <div class="article-card__content">
+                                            <a href="/" class="article-card__link">
+                                                <h3 class="aside-recommended__card-title">
+                                                    Office Meetings Leave the Office
+                                                </h3>
+                                                <span class="published-time">
+                                                    15 minuts ago
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="col-popular__item">
+                                <article class="aside-recommended__card article-card col-popular-card">
+                                    <div class="aside-recommended__card-top flex-space">
+                                        <img src="./images/featured-reads/aside-5.jpg" alt="">
+                                        <div class="article-card__content">
+                                            <a href="/" class="article-card__link">
+                                                <h3 class="aside-recommended__card-title">
+                                                    Office Meetings Leave the Office
+                                                </h3>
+                                                <span class="published-time">
+                                                    15 minuts ago
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="col-popular__item">
+                                <article class="aside-recommended__card article-card col-popular-card">
+                                    <div class="aside-recommended__card-top flex-space">
+                                        <img src="./images/featured-reads/aside-6.jpg" alt="">
+                                        <div class="article-card__content">
+                                            <a href="/" class="article-card__link">
+                                                <h3 class="aside-recommended__card-title">
+                                                    Office Meetings Leave the Office
+                                                </h3>
+                                                <span class="published-time">
+                                                    15 minuts ago
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="col-popular__item">
+                                <article class="aside-recommended__card article-card col-popular-card">
+                                    <div class="aside-recommended__card-top flex-space">
+                                        <img src="./images/featured-reads/aside-7.jpg" alt="">
+                                        <div class="article-card__content">
+                                            <a href="/" class="article-card__link">
+                                                <h3 class="aside-recommended__card-title">
+                                                    Office Meetings Leave the Office
+                                                </h3>
+                                                <span class="published-time">
+                                                    15 minuts ago
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ol>
+                        <a href="/" class="col-popular-card__link">Read more</a>
+                    </aside>
                 </div>
             </div>
         </section>
