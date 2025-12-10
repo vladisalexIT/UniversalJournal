@@ -919,7 +919,6 @@ h6 {
 }
 
 .article-card__author {
-    flex-wrap: wrap;
     gap: 10px;
     padding-block: 12px;
     border-top: 1px solid var(--color-border);
@@ -934,6 +933,11 @@ h6 {
 .row {
     flex-direction: row;
     align-items: center;
+}
+
+.article-card__content {
+    max-width: 439px;
+    width: 100%;
 }
 
 .article-card__author-name {
@@ -1023,7 +1027,7 @@ h6 {
 }
 
 .col-popular {
-    max-width: 263px;
+    flex-basis: 263px;
     width: 100%;
     padding-inline: 25px;
     background-color: var(--color-greyblue);
@@ -1164,6 +1168,7 @@ h6 {
 .featured-reads__inner {
     align-items: flex-start;
     justify-content: space-between;
+    column-gap: 29px;
 }
 
 
@@ -1223,6 +1228,18 @@ h6 {
 
 .featured-reads__top {
     column-gap: 25px;
+}
+
+.card__block-img {
+    box-sizing: inherit;
+}
+
+.card__block-img img {
+    border-style: none;
+    height: auto;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .article-title--medium {
@@ -1617,6 +1634,10 @@ ol li::before {
     .hero__article-list {
         column-gap: 30px;
     }
+
+    .col-popular {
+        max-width: 235px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -1748,6 +1769,10 @@ ol li::before {
         margin-bottom: 20px;
     }
 
+    .article-title--medium {
+        font-size: 18px;
+    }
+
     .tab__author {
         margin-bottom: 10px;
     }
@@ -1757,13 +1782,23 @@ ol li::before {
     }
 
     .button,
-    .tab__video-link {
+    .tab__video-link,
+    .article-card__text {
         font-size: 12px;
     }
 
-
     .col-popular {
         margin-left: auto;
+    }
+
+    .featured-reads__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .col-popular {
+        flex-grow: 1;
+        max-width: 100%;
     }
 }
 
@@ -1787,17 +1822,14 @@ ol li::before {
     }
 
     .article-card__author-review {
+        min-width: 150px;
         margin-right: 0;
-        max-width: 200px;
         width: 100%;
+        flex: 1;
     }
 
     .article-card-content-spacing {
         padding-bottom: 15px;
-    }
-
-    .col-popular {
-        max-width: 100%;
     }
 
     .news__grid-card-image {
@@ -1805,6 +1837,8 @@ ol li::before {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
+
+
 }
 
 
@@ -1871,6 +1905,21 @@ ol li::before {
     .tab__video-link img {
         width: 36px;
         aspect-ratio: 1;
+    }
+
+    .top-story__headline {
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .top-story__headline {
+        font-size: 34px;
+    }
+
+    .top-story {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-inline: 10px;
     }
 
 }
@@ -1944,11 +1993,22 @@ ol li::before {
         font-size: 13px;
     }
 
+    .article-card__author {
+        padding-right: 10px;
+    }
+
     .article-card__top {
         flex-direction: column;
         align-items: end;
     }
 
+    .review__comment {
+        column-gap: 5px;
+    }
+
+    .top-story__headline {
+        font-size: 26px;
+    }
 
 
 }
