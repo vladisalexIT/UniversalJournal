@@ -30,7 +30,6 @@
                         </button>
                         <span>Sections</span>
                     </div>
-
                     <form action="/" class="header__top-form search-form flex-space">
                         <button type="submit" class="search-form__button">
                             <img src="./icons/search.svg" alt="">
@@ -42,16 +41,16 @@
                     <button type="button" class="header__action-promo subscribe-promo flex-space" href="/">
                         <img src="./images/subs.jpg" class="subscribe-promo-img" alt="Link to subscribe" />
                         <div class="subscribe-promo__body flex-space">
-                            <strong class="subscribe-promo-title">Subscribe Now</strong>
-                            <small class="subscribe-promo-sub">3 month for $19</small>
+                            <strong class="subscribe-promo__title">Subscribe Now</strong>
+                            <small class="subscribe-promo__sub">3 month for $19</small>
                         </div>
                     </button>
-                    <button class="header__action-sign-in sign-in flex-space" type="button" aria-haspopup="dialog"
+                    <button class="sign-in-button flex-space" type="button" aria-haspopup="dialog"
                         aria-controls="loginModal">
-                        <span class="header__icon" aria-hidden="true">
-                            <img src="./icons/sign-in.svg" alt="">
+                        <span class="sign-in-button__icon" aria-hidden="true">
+                            <img src="./icons/sign-in.svg" alt="Link to sign in">
                         </span>
-                        <span class="header__text">Sign In</span>
+                        <span class="sign-in-button__text">Sign In</span>
                     </button>
                 </div>
             </div>
@@ -60,7 +59,7 @@
                     <a href="/" class="header__masthead-logo logo">
                         <img src="./images/header-logo.png" alt="Statue of Liberty logo">
                     </a>
-                    <span class="header__masthead-logo-description">
+                    <span class="header__masthead-description">
                         Boston and New York Bear Brunt
                     </span>
                 </div>
@@ -73,7 +72,7 @@
                         <span class="datetime-weather__weather-icon">
                             <img src="./icons/sun.svg" alt="" width="20" height="20">
                         </span>
-                        <span class="weather-row__temp">- 23 °C</span>
+                        <span class="datetime-weather__weather-temp">- 23 °C</span>
                     </div>
                 </div>
             </div>
@@ -143,34 +142,34 @@
             <div class="container">
                 <ul class="hero__article-list">
                     <li class="hero__article-item">
-                        <article class="hero___article article">
-                            <a class="article__link" href="/" aria-label="Открыть статью: Заголовок статьи">
-                                <h2 class="article__title">25 Songs That Tell Us Where Music Is Going</h2>
-                                <img class="article__image" src="./images/hero/article-1.jpg" alt="guitar" />
+                        <article class="hero__article">
+                            <a class="hero__article-link" href="/" aria-label="Открыть статью: Заголовок статьи">
+                                <h2 class="hero__article-title">25 Songs That Tell Us Where Music Is Going</h2>
+                                <img src="./images/hero/article-1.jpg" alt="guitar" />
                             </a>
                         </article>
                     </li>
                     <li class="hero__article-item">
-                        <article class="hero___article article">
-                            <a class="article__link" href="/" aria-label="Открыть статью: Заголовок статьи">
-                                <h2 class="article__title">These Ancient Assassins Eat Their Own Kind</h2>
-                                <img class="article__image" src="./images/hero/article-2.jpg" alt="guitar" />
+                        <article class="hero__article">
+                            <a class="hero__article-link" href="/" aria-label="Открыть статью: Заголовок статьи">
+                                <h2 class="hero__article-title">These Ancient Assassins Eat Their Own Kind</h2>
+                                <img src="./images/hero/article-2.jpg" alt="guitar" />
                             </a>
                         </article>
                     </li>
                     <li class="hero__article-item">
-                        <article class="hero___article article">
-                            <a class="article__link" href="/" aria-label="Открыть статью: Заголовок статьи">
-                                <h2 class="article__title">How Do You Teach People to Love Difficult Music?</h2>
-                                <img class="article__image" src="./images/hero/article-3.jpg" alt="guitar" />
+                        <article class="hero__article">
+                            <a class="hero__article-link" href="/" aria-label="Открыть статью: Заголовок статьи">
+                                <h2 class="hero__article-title">How Do You Teach People to Love Difficult Music?</h2>
+                                <img src="./images/hero/article-3.jpg" alt="guitar" />
                             </a>
                         </article>
                     </li>
                     <li class="hero__article-item">
-                        <article class="hero___article article">
-                            <a class="article__link" href="/" aria-label="Открыть статью: Заголовок статьи">
-                                <h2 class="article__title">International Soccer’s Man of Mystery</h2>
-                                <img class="article__image" src="./images/hero/article-4.jpg" alt="guitar" />
+                        <article class="hero__article">
+                            <a class="hero__article-link" href="/" aria-label="Открыть статью: Заголовок статьи">
+                                <h2 class="hero__article-title">International Soccer’s Man of Mystery</h2>
+                                <img src="./images/hero/article-4.jpg" alt="guitar" />
                             </a>
                         </article>
                     </li>
@@ -178,7 +177,12 @@
                 <div id="tabs" class="hero__tabs">
                     <div class="tabs__content">
                         <div id="tabs-1" class="tab">
-                            <img src="./images/tabs/1.jpg" alt="Beautiful nature view" class="tab__img">
+                            <picture>
+                                <source srcset="./images/tabs/1.avif" type="image/avif">
+                                <source srcset="./images/tabs/1.webp" type="image/webp">
+                                <img src="./images/tabs/1.jpg" alt="Beautiful nature view" class="tab__img" width="877"
+                                    height="570" />
+                            </picture>
                             <div class="tab__author flex-space">
                                 <img src="./images/hero/hero-avatar.png" alt="A man with a beard">
                                 <div class="tab__author-info">
@@ -195,7 +199,8 @@
                                 </h3>
                                 <div class="tab__links flex-space">
                                     <a href="/" class="tab__link button button--read">Read more</a>
-                                    <a href="https://youtu.be/a78lWX2KUu4" target="_blank" class="tab__video-link">
+                                    <a href="https://youtu.be/a78lWX2KUu4" target="_blank"
+                                        class="tab__video-link video">
                                         <img src="./icons/video-play.svg" alt="Play video">
                                         <div class="video__text">
                                             <span class="video__name">The chalk cliff of Beachy Head</span>
@@ -206,7 +211,12 @@
                             </div>
                         </div>
                         <div id="tabs-2" class="tab">
-                            <img src="./images/tabs/2.jpg" alt="Beautiful nature view" class="tab__img">
+                            <picture>
+                                <source srcset="./images/tabs/2.avif" type="image/avif">
+                                <source srcset="./images/tabs/2.webp" type="image/webp">
+                                <img src="./images/tabs/2.jpg" alt="Beautiful nature view" class="tab__img" width="877"
+                                    height="570" loading="lazy" />
+                            </picture>
                             <div class="tab__author flex-space">
                                 <img src="./images/hero/hero-avatar.png" alt="A man with a beard">
                                 <div class="tab__author-info">
@@ -223,7 +233,8 @@
                                 </h3>
                                 <div class="tab__links flex-space">
                                     <a href="/" class="tab__link button button--read">Read more</a>
-                                    <a href="https://youtu.be/a78lWX2KUu4" target="_blank" class="tab__video-link">
+                                    <a href="https://youtu.be/a78lWX2KUu4" target="_blank"
+                                        class="tab__video-link video">
                                         <img src="./icons/video-play.svg" alt="Play video">
                                         <div class="video__text">
                                             <span class="video__name">The chalk cliff of Beachy Head</span>
@@ -234,7 +245,12 @@
                             </div>
                         </div>
                         <div id="tabs-3" class="tab">
-                            <img src="./images/tabs/3.jpg" alt="Beautiful nature view" class="tab__img">
+                            <picture>
+                                <source srcset="./images/tabs/3.avif" type="image/avif">
+                                <source srcset="./images/tabs/3.webp" type="image/webp">
+                                <img src="./images/tabs/3.jpg" alt="Beautiful nature view" class="tab__img" width="877"
+                                    height="570" loading="lazy" />
+                            </picture>
                             <div class="tab__author flex-space">
                                 <img src="./images/hero/hero-avatar.png" alt="A man with a beard">
                                 <div class="tab__author-info">
@@ -251,7 +267,8 @@
                                 </h3>
                                 <div class="tab__links flex-space">
                                     <a href="/" class="tab__link button button--read">Read more</a>
-                                    <a href="https://youtu.be/a78lWX2KUu4" target="_blank" class="tab__video-link">
+                                    <a href="https://youtu.be/a78lWX2KUu4" target="_blank"
+                                        class="tab__video-link video">
                                         <img src="./icons/video-play.svg" alt="Play video">
                                         <div class="video__text">
                                             <span class="video__name">The chalk cliff of Beachy Head</span>
@@ -262,7 +279,12 @@
                             </div>
                         </div>
                         <div id="tabs-4" class="tab">
-                            <img src="./images/tabs/4.jpg" alt="Beautiful nature view" class="tab__img">
+                            <picture>
+                                <source srcset="./images/tabs/4.avif" type="image/avif">
+                                <source srcset="./images/tabs/4.webp" type="image/webp">
+                                <img src="./images/tabs/4.jpg" alt="Beautiful nature view" class="tab__img" width="877"
+                                    height="570" loading="lazy" />
+                            </picture>
                             <div class="tab__author flex-space">
                                 <img src="./images/hero/hero-avatar.png" alt="A man with a beard">
                                 <div class="tab__author-info">
@@ -279,7 +301,8 @@
                                 </h3>
                                 <div class="tab__links flex-space">
                                     <a href="/" class="tab__link button button--read">Read more</a>
-                                    <a href="https://youtu.be/a78lWX2KUu4" target="_blank" class="tab__video-link">
+                                    <a href="https://youtu.be/a78lWX2KUu4" target="_blank"
+                                        class="tab__video-link video">
                                         <img src="./icons/video-play.svg" alt="Play video">
                                         <div class="video__text">
                                             <span class="video__name">The chalk cliff of Beachy Head</span>
@@ -291,7 +314,12 @@
 
                         </div>
                         <div id="tabs-5" class="tab">
-                            <img src="./images/tabs/5.jpg" alt="Beautiful nature view" class="tab__img">
+                            <picture>
+                                <source srcset="./images/tabs/5.avif" type="image/avif">
+                                <source srcset="./images/tabs/5.webp" type="image/webp">
+                                <img src="./images/tabs/5.jpg" alt="Beautiful nature view" class="tab__img" width="877"
+                                    height="570" loading="lazy" />
+                            </picture>
                             <div class="tab__author flex-space">
                                 <img src="./images/hero/hero-avatar.png" alt="A man with a beard">
                                 <div class="tab__author-info">
@@ -308,7 +336,8 @@
                                 </h3>
                                 <div class="tab__links flex-space">
                                     <a href="/" class="tab__link button button--read">Read more</a>
-                                    <a href="https://youtu.be/a78lWX2KUu4" target="_blank" class="tab__video-link">
+                                    <a href="https://youtu.be/a78lWX2KUu4" target="_blank"
+                                        class="tab__video-link video">
                                         <img src="./icons/video-play.svg" alt="Play video">
                                         <div class="video__text">
                                             <span class="video__name">The chalk cliff of Beachy Head</span>
@@ -319,26 +348,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tabs__preview preview">
-                        <div class="preview__heading">
-                            <p class="preview__heading-text">Recommended for you</p>
+                    <div class="tabs__preview">
+                        <div class="tabs__preview-heading">
+                            <p class="tabs__preview-heading-text">Recommended for you</p>
                         </div>
                         <ul>
-                            <li class="preview__item active">
+                            <li class="tabs__preview-item active">
                                 <a href="#tabs-1">
-                                    <div class="preview__content">
+                                    <div class="tabs__preview-content">
                                         <span class="subtitle preview__subtitle subtitle--bluegreen">
                                             Food
                                         </span>
-                                        <p class="preview__descr preview__descr--video">
+                                        <p class="preview__descr preview__descr--video-link">
                                             For Chicken-Fried Steak, Too Much Is Just Enough
                                         </p>
                                     </div>
                                 </a>
                             </li>
-                            <li class="preview__item">
+                            <li class="tabs__preview-item">
                                 <a href="#tabs-2">
-                                    <div class="preview__content">
+                                    <div class="tabs__preview-content">
                                         <span class="subtitle preview__subtitle subtitle--greyblue">
                                             Cars
                                         </span>
@@ -348,9 +377,9 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="preview__item">
+                            <li class="tabs__preview-item">
                                 <a href="#tabs-3">
-                                    <div class="preview__content">
+                                    <div class="tabs__preview-content">
                                         <span class="subtitle preview__subtitle subtitle--purple">
                                             Movies
                                         </span>
@@ -360,21 +389,21 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="preview__item">
+                            <li class="tabs__preview-item">
                                 <a href="#tabs-4">
-                                    <div class="preview__content">
+                                    <div class="tabs__preview-content">
                                         <span class="subtitle preview__subtitle subtitle--orange">
                                             NFL
                                         </span>
-                                        <p class="preview__descr preview__descr--video">
+                                        <p class="preview__descr preview__descr--video-link">
                                             11 surprising stat rankings for active NFL players
                                         </p>
                                     </div>
                                 </a>
                             </li>
-                            <li class="preview__item">
+                            <li class="tabs__preview-item">
                                 <a href="#tabs-5">
-                                    <div class="preview__content">
+                                    <div class="tabs__preview-content">
                                         <span class="subtitle preview__subtitle subtitle--green">
                                             Tech Reviews
                                         </span>
@@ -385,9 +414,7 @@
                                 </a>
                             </li>
                         </ul>
-
                     </div>
-
                 </div>
             </div>
         </section>
@@ -410,7 +437,9 @@
                                     </p>
                                 </a>
                             </div>
-                            <img src="./images/news/1.png" alt="Silver sports car" class="article-card--big__img">
+
+                            <img src="./images/news/1.png" alt="Silver sports car" class="article-card--big__img"
+                                width="292" height="299" loading="lazy">
                         </div>
                         <div class="article-card__author flex-space">
                             <img src="./images/news/author-1.png" alt="Girl-avatar">
@@ -426,8 +455,11 @@
                             </div>
                         </div>
                     </article>
-                    <article class="news__grid-card article-card article-card--big"
-                        style="background-image:url('./images/news/2.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;">
+                    <article class="news__grid-card article-card article-card--big" style="background-image:image-set(
+                            url('./images/news/2.avif') type('image/avif'),
+                            url('./images/news/2.webp') type('image/webp'),
+                            url('./images/news/2.jpg') type('image/jpeg')
+                            );background-size:cover;background-position:center;background-repeat:no-repeat;">
                         <a href="/" class="article__badge">Popular</a>
                         <div class="article-card__top flex-space">
                             <div class="article-card__content">
@@ -532,8 +564,12 @@
                     </aside>
                     <article class="news__grid-card article-card img-card article-card--big">
                         <div class="article-card__top">
-                            <img src="./images/news/3.jpg" alt="A sphinx is sniffing the plant"
-                                class="news__grid-card-image">
+                            <picture>
+                                <source srcset="./images/news/3.avif" type="image/avif">
+                                <source srcset="./images/news/3.webp" type="image/webp">
+                                <img src="./images/news/3.jpg" alt="A sphinx is sniffing the plant"
+                                    class="news__grid-card-image" width="263" height="275" loading="lazy" />
+                            </picture>
                             <div class="article-card__content article-card-content-spacing">
                                 <a href="/" class="article-card__link">
                                     <h3 class="article-card__title img-card__title">
@@ -638,8 +674,12 @@
                                 </label>
                                 <div class="featured-reads__top flex-space">
                                     <div class="card__block-img">
-                                        <img src="./images/featured-reads/article-1.jpg" alt="Silver sports car"
-                                            width="336" height="195">
+                                        <picture>
+                                            <source srcset="./images/featured-reads/article-1.avif" type="image/avif">
+                                            <source srcset="./images/featured-reads/article-1.webp" type="image/webp">
+                                            <img src="./images/featured-reads/article-1.jpg" alt="Silver sports car"
+                                                width="336" height="195" loading="lazy" />
+                                        </picture>
                                     </div>
                                     <div class="article-card__content">
                                         <span class="article-card__subtitle subtitle subtitle--blue">
@@ -673,8 +713,12 @@
                             <article class="featured-reads__card article-card article-card--wide">
                                 <div class="featured-reads__top flex-space">
                                     <div class="card__block-img">
-                                        <img src="./images/featured-reads/article-2.jpg" alt="Silver sports car"
-                                            width="336" height="195">
+                                        <picture>
+                                            <source srcset="./images/featured-reads/article-2.avif" type="image/avif">
+                                            <source srcset="./images/featured-reads/article-2.webp" type="image/webp">
+                                            <img src="./images/featured-reads/article-2.jpg" alt="Silver sports car"
+                                                width="336" height="195" loading="lazy" />
+                                        </picture>
                                     </div>
                                     <div class="article-card__content">
                                         <span class="article-card__subtitle subtitle subtitle--bluegreen">
@@ -708,8 +752,12 @@
                             <article class="featured-reads__card article-card article-card--wide">
                                 <div class="featured-reads__top flex-space">
                                     <div class="card__block-img">
-                                        <img src="./images/featured-reads/article-3.jpg" alt="Silver sports car"
-                                            width="336" height="195">
+                                        <picture>
+                                            <source srcset="./images/featured-reads/article-3.avif" type="image/avif">
+                                            <source srcset="./images/featured-reads/article-3.webp" type="image/webp">
+                                            <img src="./images/featured-reads/article-3.jpg" alt="Silver sports car"
+                                                width="336" height="195" loading="lazy" />
+                                        </picture>
                                     </div>
                                     <div class="article-card__content">
                                         <span class="article-card__subtitle subtitle subtitle--red">
@@ -743,8 +791,12 @@
                             <article class="featured-reads__card article-card article-card--wide">
                                 <div class="featured-reads__top flex-space">
                                     <div class="card__block-img">
-                                        <img src="./images/featured-reads/article-4.jpg" alt="Silver sports car"
-                                            width="336" height="195">
+                                        <picture>
+                                            <source srcset="./images/featured-reads/article-4.avif" type="image/avif">
+                                            <source srcset="./images/featured-reads/article-4.webp" type="image/webp">
+                                            <img src="./images/featured-reads/article-4.jpg" alt="Silver sports car"
+                                                width="336" height="195" loading="lazy" />
+                                        </picture>
                                     </div>
                                     <div class="article-card__content">
                                         <span class="article-card__subtitle subtitle subtitle--bluegreen">
@@ -778,8 +830,12 @@
                             <article class="featured-reads__card article-card article-card--wide">
                                 <div class="featured-reads__top flex-space">
                                     <div class="card__block-img">
-                                        <img src="./images/featured-reads/article-5.jpg" alt="Silver sports car"
-                                            width="336" height="195">
+                                        <picture>
+                                            <source srcset="./images/featured-reads/article-5.avif" type="image/avif">
+                                            <source srcset="./images/featured-reads/article-5.webp" type="image/webp">
+                                            <img src="./images/featured-reads/article-5.jpg" alt="Silver sports car"
+                                                width="336" height="195" loading="lazy" />
+                                        </picture>
                                     </div>
                                     <div class="article-card__content">
                                         <span class="article-card__subtitle subtitle subtitle--red">
@@ -813,8 +869,12 @@
                             <article class="featured-reads__card article-card article-card--wide">
                                 <div class="featured-reads__top flex-space">
                                     <div class="card__block-img">
-                                        <img src="./images/featured-reads/article-6.jpg" alt="Silver sports car"
-                                            width="336" height="195">
+                                        <picture>
+                                            <source srcset="./images/featured-reads/article-6.avif" type="image/avif">
+                                            <source srcset="./images/featured-reads/article-6.webp" type="image/webp">
+                                            <img src="./images/featured-reads/article-6.jpg" alt="Silver sports car"
+                                                width="336" height="195" loading="lazy" />
+                                        </picture>
                                     </div>
                                     <div class="article-card__content">
                                         <span class="article-card__subtitle subtitle subtitle--purple">
@@ -980,7 +1040,12 @@
                     <div class="highlights__slider single-item" style="max-width: 555px; width: 100%;">
                         <div class="slide">
                             <a href="/" class="article__badge slide-badge">Hot</a>
-                            <img class="slide__img" src="./images/highlights/slide-1.jpg" alt="Описание 1" />
+                            <picture>
+                                <source srcset="./images/highlights/slide-1.avif" type="image/avif">
+                                <source srcset="./images/highlights/slide-1.webp" type="image/webp">
+                                <img class="slide__img" src="./images/highlights/slide-1.jpg" alt="Описание 1"
+                                    width="555" height="570" loading="lazy" />
+                            </picture>
                             <div class="slide__content">
                                 <div class="slide__author">
                                     <img src="./images/highlights/avatar-1.png" alt="A girl in a big hat"
@@ -1004,7 +1069,12 @@
                         </div>
                         <div class="slide">
                             <a href="/" class="article__badge slide-badge">Hot</a>
-                            <img class="slide__img" src="./images/highlights/slide-1.jpg" alt="Описание 1" />
+                            <picture>
+                                <source srcset="./images/highlights/slide-1.avif" type="image/avif">
+                                <source srcset="./images/highlights/slide-1.webp" type="image/webp">
+                                <img class="slide__img" src="./images/highlights/slide-1.jpg" alt="Описание 1"
+                                    width="555" height="570" loading="lazy" />
+                            </picture>
                             <div class="slide__content">
                                 <div class="slide__author">
                                     <img src="./images/highlights/avatar-1.png" alt="A girl in a big hat"
@@ -1028,7 +1098,12 @@
                         </div>
                         <div class="slide">
                             <a href="/" class="article__badge slide-badge">Hot</a>
-                            <img class="slide__img" src="./images/highlights/slide-1.jpg" alt="Описание 1" />
+                            <picture>
+                                <source srcset="./images/highlights/slide-1.avif" type="image/avif">
+                                <source srcset="./images/highlights/slide-1.webp" type="image/webp">
+                                <img class="slide__img" src="./images/highlights/slide-1.jpg" alt="Описание 1"
+                                    width="555" height="570" loading="lazy" />
+                            </picture>
                             <div class="slide__content">
                                 <div class="slide__author">
                                     <img src="./images/highlights/avatar-1.png" alt="A girl in a big hat"
@@ -1052,7 +1127,12 @@
                         </div>
                         <div class="slide">
                             <a href="/" class="article__badge slide-badge">Hot</a>
-                            <img class="slide__img" src="./images/highlights/slide-1.jpg" alt="Описание 1" />
+                            <picture>
+                                <source srcset="./images/highlights/slide-1.avif" type="image/avif">
+                                <source srcset="./images/highlights/slide-1.webp" type="image/webp">
+                                <img class="slide__img" src="./images/highlights/slide-1.jpg" alt="Описание 1"
+                                    width="555" height="570" loading="lazy" />
+                            </picture>
                             <div class="slide__content">
                                 <div class="slide__author">
                                     <img src="./images/highlights/avatar-1.png" alt="A girl in a big hat"
@@ -1076,7 +1156,12 @@
                         </div>
                         <div class="slide">
                             <a href="/" class="article__badge slide-badge">Hot</a>
-                            <img class="slide__img" src="./images/highlights/slide-1.jpg" alt="Описание 1" />
+                            <picture>
+                                <source srcset="./images/highlights/slide-1.avif" type="image/avif">
+                                <source srcset="./images/highlights/slide-1.webp" type="image/webp">
+                                <img class="slide__img" src="./images/highlights/slide-1.jpg" alt="Описание 1"
+                                    width="555" height="570" loading="lazy" />
+                            </picture>
                             <div class="slide__content">
                                 <div class="slide__author">
                                     <img src="./images/highlights/avatar-1.png" alt="A girl in a big hat"
@@ -1114,8 +1199,12 @@
                                 </a>
                                 <a href="/" class="button button--read">Read more</a>
                             </div>
-                            <img src="./images/highlights/2.png" alt="A standing woman with a circle behind"
-                                class="highlights__article-img">
+                            <picture>
+                                <source srcset="./images/highlights/2.avif" type="image/avif">
+                                <source srcset="./images/highlights/2.webp" type="image/webp">
+                                <img src="./images/highlights/2.png" alt="A standing woman with a circle behind"
+                                    class="highlights__article-img" width="248" height="352" loading="lazy" />
+                            </picture>
                         </div>
                     </article>
 
@@ -1137,7 +1226,8 @@
                         </div>
                     </article>
 
-                    <article class="highlights__article-card highlights__card--child-two article-card img-card highlights__article--child-two ">
+                    <article
+                        class="highlights__article-card highlights__card--child-two article-card img-card highlights__article--child-two ">
                         <div class="article-card__top">
                             <div class="article-card__content highlights__article-card-content-spacing">
                                 <a href="/" class="article-card__link">

@@ -1,4 +1,4 @@
-const tabCollection = document.querySelectorAll('.preview__item');
+const tabCollection = document.querySelectorAll('.tabs__preview-item');
 const removeActiveState = () => {
   tabCollection.forEach(everyTab => {
     everyTab.classList.remove('active')
