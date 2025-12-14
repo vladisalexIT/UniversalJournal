@@ -1096,7 +1096,7 @@ h6 {
     padding: 45px 0 39px 0;
 }
 
-.col-popular-card::before {
+.news__grid-card::before {
     content: "";
     background-image: url(../images/aside-quote.svg);
     background-repeat: no-repeat;
@@ -1739,7 +1739,7 @@ ol li::before {
         border-top-right-radius: 10px;
     }
 
-    .col-popular-card::before {
+    .news__grid-card::before {
         top: 20px;
     }
 }
@@ -2343,7 +2343,7 @@ ol li::before {
         align-items: end;
     }
 
-    .col-popular-card::before {
+    .news__grid-card::before {
         top: 10px;
     }
 }
