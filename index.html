@@ -12,11 +12,26 @@
 
 <body>
     <svg display="none">
-        <symbol id="bookmark" viewBox="0 0 16 17">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M11.8125 11.2762L15.7567 15.4843C16.0904 15.8403 16.0794 16.4079 15.7326 16.7502C15.5694 16.9114 15.3544 17 15.1278 17C14.8883 17 14.6649 16.9024 14.4988 16.7255L10.5246 12.4854C9.39609 13.299 8.07619 13.7275 6.69113 13.7275C3.0017 13.7275 0 10.6484 0 6.86374C0 3.07913 3.0017 0 6.69113 0C10.3806 0 13.3823 3.07913 13.3823 6.86374C13.3823 8.48359 12.8266 10.0396 11.8125 11.2762ZM11.6367 6.86374C11.6367 4.06632 9.4182 1.79054 6.69113 1.79054C3.96406 1.79054 1.74551 4.06632 1.74551 6.86374C1.74551 9.66117 3.96406 11.9369 6.69113 11.9369C9.4182 11.9369 11.6367 9.66117 11.6367 6.86374Z" />
+        <symbol id="bookmark" viewBox="0 0 14 18">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2 0H12C13.1046 0 14 0.89543 14 2V18L7.09495 13L0 18V2C0 0.89543 0.89543 0 2 0Z" />
+            </g>
+        </symbol>
+        <symbol id="search-icon" viewBox="0 0 14 18">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M17.1354 16.3951L12.846 11.9395C13.9489 10.6301 14.5532 8.98262 14.5532 7.26749C14.5532 3.26026 11.2889 0 7.2766 0C3.26435 0 0 3.26026 0 7.26749C0 11.2747 3.26435 14.535 7.2766 14.535C8.78286 14.535 10.2182 14.0812 11.4455 13.2199L15.7674 17.7093C15.9481 17.8967 16.1911 18 16.4514 18C16.6979 18 16.9317 17.9062 17.1092 17.7355C17.4863 17.3731 17.4983 16.7721 17.1354 16.3951ZM7.2766 1.89587C10.2423 1.89587 12.655 4.30552 12.655 7.26749C12.655 10.2295 10.2423 12.6391 7.2766 12.6391C4.31091 12.6391 1.89824 10.2295 1.89824 7.26749C1.89824 4.30552 4.31091 1.89587 7.2766 1.89587Z" />
+            </g>
+        </symbol>
+        <symbol id="sign-in-icon" viewBox="0 0 20 20">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18 16.6316C16.3675 18.2105 13.7008 19 10 19C6.29917 19 3.63251 18.2105 2 16.6316C2 13.3481 3.90591 10.9832 6.70588 10C7.60059 10.4169 8.59455 11 10 11C11.4054 11 12.3311 10.3926 13.2941 10C16.0575 10.9965 18 13.3748 18 16.6316ZM10 9C7.79086 9 6 7.20914 6 5C6 2.79086 7.79086 1 10 1C12.2091 1 14 2.79086 14 5C14 7.20914 12.2091 9 10 9Z" />
+            </g>
         </symbol>
     </svg>
+    
     <div class="overlay"></div>
     <header class="header">
         <div class="container">
@@ -32,9 +47,12 @@
                     </div>
                     <form action="/" class="header__top-form search-form flex-space">
                         <button type="submit" class="search-form__button">
-                            <img src="./icons/search.svg" alt="">
+                            <svg class="search-icon">
+                                <use xlink:href="#search-icon">
+                            </svg>
                         </button>
-                        <input type="search" placeholder="Search" class="search-form__input input">
+                        <label class="visually-hidden" for="search">Search</label>
+                        <input id="search" type="search" placeholder="Search" class="search-form__input input">
                     </form>
                 </div>
                 <div class="header__action flex-space">
@@ -48,7 +66,9 @@
                     <button class="sign-in-button flex-space" type="button" aria-haspopup="dialog"
                         aria-controls="loginModal">
                         <span class="sign-in-button__icon" aria-hidden="true">
-                            <img src="./icons/sign-in.svg" alt="Link to sign in">
+                            <svg class="sign-in-icon">
+                                <use xlink:href="#sign-in-icon">
+                            </svg>
                         </span>
                         <span class="sign-in-button__text">Sign In</span>
                     </button>
@@ -669,7 +689,7 @@
                                 <label for="card__input-check" class="card__label">
                                     <input type="checkbox" id="card__input-check" class="hidden-checkbox card__input">
                                     <svg class="bookmark">
-                                        <use xlink:href="img/spriteStyle.svg#Bookmark">
+                                        <use xlink:href="#bookmark">
                                     </svg>
                                 </label>
                                 <div class="featured-reads__top flex-space">
@@ -711,6 +731,12 @@
                         </li>
                         <li class="featured-reads__item">
                             <article class="featured-reads__card article-card article-card--wide">
+                                <label for="card__input-check-2" class="card__label">
+                                    <input type="checkbox" id="card__input-check-2" class="hidden-checkbox card__input">
+                                    <svg class="bookmark">
+                                        <use xlink:href="#bookmark">
+                                    </svg>
+                                </label>
                                 <div class="featured-reads__top flex-space">
                                     <div class="card__block-img">
                                         <picture>
@@ -750,6 +776,12 @@
                         </li>
                         <li class="featured-reads__item">
                             <article class="featured-reads__card article-card article-card--wide">
+                                <label for="card__input-check-3" class="card__label">
+                                    <input type="checkbox" id="card__input-check-3" class="hidden-checkbox card__input">
+                                    <svg class="bookmark">
+                                        <use xlink:href="#bookmark">
+                                    </svg>
+                                </label>
                                 <div class="featured-reads__top flex-space">
                                     <div class="card__block-img">
                                         <picture>
@@ -789,6 +821,12 @@
                         </li>
                         <li class="featured-reads__item">
                             <article class="featured-reads__card article-card article-card--wide">
+                                <label for="card__input-check-4" class="card__label">
+                                    <input type="checkbox" id="card__input-check-4" class="hidden-checkbox card__input">
+                                    <svg class="bookmark">
+                                        <use xlink:href="#bookmark">
+                                    </svg>
+                                </label>
                                 <div class="featured-reads__top flex-space">
                                     <div class="card__block-img">
                                         <picture>
@@ -828,6 +866,12 @@
                         </li>
                         <li class="featured-reads__item">
                             <article class="featured-reads__card article-card article-card--wide">
+                                <label for="card__input-check-5" class="card__label">
+                                    <input type="checkbox" id="card__input-check-5" class="hidden-checkbox card__input">
+                                    <svg class="bookmark">
+                                        <use xlink:href="#bookmark">
+                                    </svg>
+                                </label>
                                 <div class="featured-reads__top flex-space">
                                     <div class="card__block-img">
                                         <picture>
@@ -867,6 +911,12 @@
                         </li>
                         <li class="featured-reads__item">
                             <article class="featured-reads__card article-card article-card--wide">
+                                <label for="card__input-check-6" class="card__label">
+                                    <input type="checkbox" id="card__input-check-6" class="hidden-checkbox card__input">
+                                    <svg class="bookmark">
+                                        <use xlink:href="#bookmark">
+                                    </svg>
+                                </label>
                                 <div class="featured-reads__top flex-space">
                                     <div class="card__block-img">
                                         <picture>
