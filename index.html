@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UniversalJournal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -31,7 +30,7 @@
             </g>
         </symbol>
     </svg>
-    
+
     <div class="overlay"></div>
     <header class="header">
         <div class="container">
@@ -57,7 +56,12 @@
                 </div>
                 <div class="header__action flex-space">
                     <button type="button" class="header__action-promo subscribe-promo flex-space" href="/">
-                        <img src="./images/subs.jpg" class="subscribe-promo-img" alt="Link to subscribe" />
+                        <picture>
+                            <source srcset="./images/subs.avif" type="image/avif">
+                            <source srcset="./images/subs.webp" type="image/webp">
+                            <img src="./images/subs.jpg" class="subscribe-promo-img" alt="Link to subscribe" width="768"
+                                height="512" />
+                        </picture>
                         <div class="subscribe-promo__body flex-space">
                             <strong class="subscribe-promo__title">Subscribe Now</strong>
                             <small class="subscribe-promo__sub">3 month for $19</small>
@@ -1233,6 +1237,7 @@
                                 </a>
                             </div>
                         </div>
+
                     </div>
                     <article class="highlights__grid-card article-card article-card--wide article-card--big">
                         <div class="article-card__top flex-space">
