@@ -46,8 +46,8 @@
                     </div>
                     <form action="/" class="header__top-form search-form flex-space">
                         <button type="submit" class="search-form__button">
-                            <svg class="search-icon">
-                                <use xlink:href="#search-icon">
+                            <svg class="search-icon" aria-hidden="true" focusable="false">
+                                <use href="#search-icon" xlink:href="#search-icon"></use>
                             </svg>
                         </button>
                         <label class="visually-hidden" for="search">Search</label>
@@ -55,7 +55,7 @@
                     </form>
                 </div>
                 <div class="header__action flex-space">
-                    <button type="button" class="header__action-promo subscribe-promo flex-space" href="/">
+                    <a href="/" class="header__action-promo subscribe-promo flex-space">
                         <picture>
                             <source srcset="./images/subs.avif" type="image/avif">
                             <source srcset="./images/subs.webp" type="image/webp">
@@ -66,12 +66,11 @@
                             <strong class="subscribe-promo__title">Subscribe Now</strong>
                             <small class="subscribe-promo__sub">3 month for $19</small>
                         </div>
-                    </button>
-                    <button class="sign-in-button flex-space" type="button" aria-haspopup="dialog"
-                        aria-controls="loginModal">
+                    </a>
+                    <button class="sign-in-button flex-space" type="button" aria-haspopup="dialog">
                         <span class="sign-in-button__icon" aria-hidden="true">
                             <svg class="sign-in-icon">
-                                <use xlink:href="#sign-in-icon">
+                                <use href="#sign-in-icon" xlink:href="#sign-in-icon"></use>
                             </svg>
                         </span>
                         <span class="sign-in-button__text">Sign In</span>
@@ -480,10 +479,10 @@
                         </div>
                     </article>
                     <article class="news__grid-card article-card article-card--big" style="background-image:image-set(
-                            url('./images/news/2.avif') type('image/avif'),
-                            url('./images/news/2.webp') type('image/webp'),
-                            url('./images/news/2.jpg') type('image/jpeg')
-                            );background-size:cover;background-position:center;background-repeat:no-repeat;">
+                                url('./images/news/2.avif') type('image/avif'),
+                                url('./images/news/2.webp') type('image/webp'),
+                                url('./images/news/2.jpg') type('image/jpeg')
+                            );background-size:cover;background-position:center;background-repeat:no-repeat">
                         <a href="/" class="article__badge">Popular</a>
                         <div class="article-card__top flex-space">
                             <div class="article-card__content">
@@ -511,7 +510,7 @@
                             </div>
                         </div>
                     </article>
-                    <aside class="news__grid-aside col-popular" aria-labelledby="col-popular-title">
+                    <aside class="news__grid-aside col-popular">
                         <h2 class="col-popular__title">Columns</h2>
                         <ul class="col-popular__list">
                             <li class="col-popular__item">
@@ -692,8 +691,8 @@
                             <article class="featured-reads__card article-card article-card--wide">
                                 <label for="card__input-check" class="card__label">
                                     <input type="checkbox" id="card__input-check" class="hidden-checkbox card__input">
-                                    <svg class="bookmark">
-                                        <use xlink:href="#bookmark">
+                                    <svg class="bookmark" role="img" aria-hidden="true" focusable="false">
+                                        <use href="#bookmark" xlink:href="#bookmark"></use>
                                     </svg>
                                 </label>
                                 <div class="featured-reads__top flex-space">
@@ -737,8 +736,8 @@
                             <article class="featured-reads__card article-card article-card--wide">
                                 <label for="card__input-check-2" class="card__label">
                                     <input type="checkbox" id="card__input-check-2" class="hidden-checkbox card__input">
-                                    <svg class="bookmark">
-                                        <use xlink:href="#bookmark">
+                                    <svg class="bookmark" role="img" aria-hidden="true" focusable="false">
+                                        <use href="#bookmark" xlink:href="#bookmark"></use>
                                     </svg>
                                 </label>
                                 <div class="featured-reads__top flex-space">
@@ -782,8 +781,8 @@
                             <article class="featured-reads__card article-card article-card--wide">
                                 <label for="card__input-check-3" class="card__label">
                                     <input type="checkbox" id="card__input-check-3" class="hidden-checkbox card__input">
-                                    <svg class="bookmark">
-                                        <use xlink:href="#bookmark">
+                                    <svg class="bookmark" role="img" aria-hidden="true" focusable="false">
+                                        <use href="#bookmark" xlink:href="#bookmark"></use>
                                     </svg>
                                 </label>
                                 <div class="featured-reads__top flex-space">
@@ -827,8 +826,8 @@
                             <article class="featured-reads__card article-card article-card--wide">
                                 <label for="card__input-check-4" class="card__label">
                                     <input type="checkbox" id="card__input-check-4" class="hidden-checkbox card__input">
-                                    <svg class="bookmark">
-                                        <use xlink:href="#bookmark">
+                                    <svg class="bookmark" role="img" aria-hidden="true" focusable="false">
+                                        <use href="#bookmark" xlink:href="#bookmark"></use>
                                     </svg>
                                 </label>
                                 <div class="featured-reads__top flex-space">
@@ -872,8 +871,8 @@
                             <article class="featured-reads__card article-card article-card--wide">
                                 <label for="card__input-check-5" class="card__label">
                                     <input type="checkbox" id="card__input-check-5" class="hidden-checkbox card__input">
-                                    <svg class="bookmark">
-                                        <use xlink:href="#bookmark">
+                                    <svg class="bookmark" role="img" aria-hidden="true" focusable="false">
+                                        <use href="#bookmark" xlink:href="#bookmark"></use>
                                     </svg>
                                 </label>
                                 <div class="featured-reads__top flex-space">
@@ -917,8 +916,8 @@
                             <article class="featured-reads__card article-card article-card--wide">
                                 <label for="card__input-check-6" class="card__label">
                                     <input type="checkbox" id="card__input-check-6" class="hidden-checkbox card__input">
-                                    <svg class="bookmark">
-                                        <use xlink:href="#bookmark">
+                                    <svg class="bookmark" role="img" aria-hidden="true" focusable="false">
+                                        <use href="#bookmark" xlink:href="#bookmark"></use>
                                     </svg>
                                 </label>
                                 <div class="featured-reads__top flex-space">
@@ -959,8 +958,7 @@
                             </article>
                         </li>
                     </ul>
-                    <aside class="featured-reads__aside col-popular aside-recommended"
-                        aria-labelledby="col-popular-title">
+                    <aside class="featured-reads__aside col-popular aside-recommended">
                         <h2 class="col-popular__title aside-recommended__title">Recommended for you</h2>
                         <ol class="col-popular__list">
                             <li class="col-popular__item">
@@ -1237,7 +1235,6 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
                     <article class="highlights__grid-card article-card article-card--wide article-card--big">
                         <div class="article-card__top flex-space">
@@ -1300,6 +1297,7 @@
                         </div>
                     </article>
                 </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
